@@ -6,15 +6,15 @@ import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className='App'>
-    <Router>
-    <Navbar></Navbar>
-      <Routes>
-        <Route path='/'   Component={Home}></Route>
-     </Routes>
+    <div className="App">
+      <Router>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="home" element={<Home/>}></Route>
+        </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App
